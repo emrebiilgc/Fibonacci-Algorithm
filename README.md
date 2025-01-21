@@ -1,2 +1,3 @@
 # Fibonacci-Algorithm
 Naive and Eager Recursion Algorithms for Fibonacci
+The naive approach calculates Fibonacci numbers recursively without memory optimization, using the formula fib(n) = fib(n-1) + fib(n-2), which recalculates the same values multiple times, leading to exponential time complexity (O(2^n)) and inefficiency; for example, fib(3) and fib(2) are redundantly computed when finding fib(5). In contrast, the eager approach uses memoization to store previously computed values, avoiding redundancy and reducing time complexity to O(n). Once a Fibonacci number, like fib(3), is computed, it is stored and reused, making the eager approach significantly faster at the cost of additional memory.
